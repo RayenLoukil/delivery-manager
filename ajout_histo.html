@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MesStyles.css">
+</head>
+<body>
+    <form action="histcolis.php" method="post" onsubmit="return verif2()">
+        <fieldset>
+            <legend>Ajout Historique</legend>
+            <label for="ref">REF : </label>
+            <input type="text" name="ref" id="ref">
+            <br>
+            <label for="nomE">Historique : </label>
+            <select name="package_status" id="package_status">
+                <option value="pending">Pending 📦</option>
+                <option value="processing">Processing 🔄</option>
+                <option value="picked_up">Picked Up 🚛</option>
+                <option value="at_sorting_facility">At Sorting Facility 🏭</option>
+                <option value="customs_clearance">Customs Clearance 🌐</option>
+                <option value="delayed">Delayed 🕰️</option>
+                <option value="address_incomplete">Address Incomplete 📝</option>
+                <option value="re_routed">Re-routed 🔄</option>
+                <option value="on_hold">On Hold ⏸️</option>
+                <option value="out_for_delivery">Out for Delivery 📬</option>
+                <option value="waiting_for_pickup">Waiting for Pickup 🏠</option>
+                <option value="delivered_to_locker">Delivered to a Locker 🏢</option>
+                <option value="delivered">Delivered ✅</option>
+                <option value="failed_delivery_attempt">Failed Delivery Attempt 🚪</option>
+                <option value="returned_to_sender">Returned to Sender ↩️</option>
+                <option value="lost">Lost ❌</option>
+                <option value="awaiting_instructions">Awaiting Instructions 📬</option>
+                <option value="on_delivery_truck">On Delivery Truck 🚚</option>
+              </select>
+            <br>
+            <div id="div2">
+            <input type="checkbox" class="chk" name="chk" id="chk"> Je reconnais avoir lu et accepté les règles et conditions d'utilisation. 📜 </div>
+            <br>
+            <input type="submit" class="btn btnv" value="Valider">
+            <input type="reset" class="btn btna" value="Annuler">
+        </fieldset>
+    </form>
+    <script src="controles.js"></script>
+</body>
+</html>
